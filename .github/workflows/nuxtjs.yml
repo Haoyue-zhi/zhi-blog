@@ -16,10 +16,10 @@ jobs:
       # Pick your own package manager and build script
       - run: bun install
       - run: bun build
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: ./.output/public
+      # - name: Upload artifact
+      #   uses: actions/upload-pages-artifact@v1
+      #   with:
+      #     path: ./.output/public
   # Deployment job
   # deploy:
   #   # Add a dependency to the build job
