@@ -1,13 +1,4 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: {
-    baseURL: "/zhi-blog/",
-  },
-
-  ssr: false,
-
-  devtools: { enabled: false },
-
   modules: [
     "@vueuse/nuxt",
     "@nuxtjs/tailwindcss",
@@ -15,7 +6,10 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-aos",
   ],
-
+  app: {
+    baseURL: "/zhi-blog/",
+  },
+  devtools: { enabled: false },
   devServer: {
     port: 3333,
   },

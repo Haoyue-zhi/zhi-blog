@@ -5,7 +5,7 @@ const useActiveSection = useState("activeSection", () => "首页");
 <template>
   <div class="relative">
     <div
-      class="bg-[url('/bg.svg')] bg-top bg-no-repeat h-[502px] w-full fixed -z-10"
+      class="bg-[url('/zhi-blog/bg.svg')] bg-top bg-no-repeat h-[502px] w-full fixed -z-10"
     ></div>
     <AppHeader />
     <slot />
