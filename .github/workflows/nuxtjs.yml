@@ -15,9 +15,9 @@ jobs:
           bun-version: latest
       # Pick your own package manager and build script
       - run: bun install
-      - run: bun run generate
+      - run: bun run build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-pages-artifact@v3
         with:
           path: ./.output/public
   # Deployment job
@@ -37,4 +37,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v1
+        uses: actions/deploy-pages@v4
