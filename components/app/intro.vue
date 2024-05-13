@@ -34,7 +34,6 @@ onMounted(() => {
             width="250"
             height="250"
             quality="95"
-            priority="high"
             class="h-28 w-28 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
           />
         </div>

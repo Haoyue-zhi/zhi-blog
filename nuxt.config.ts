@@ -2,7 +2,6 @@
 export default defineNuxtConfig({
   app: {
     baseURL: "/zhi-blog/",
-    // buildAssetsDir: "/zhi-blog/",
   },
 
   ssr: false,
