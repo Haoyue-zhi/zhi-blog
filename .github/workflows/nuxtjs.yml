@@ -1,6 +1,7 @@
+# https://github.com/actions/deploy-pages#usage
 name: zhi-blog
 on:
-  workflow_dispatch:
+  # workflow_dispatch:
   push:
     branches:
       - main
@@ -8,14 +9,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: curl -fsSL https://bun.sh/install | bash
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version: "20"
+          bun-version: latest
       # Pick your own package manager and build script
       - run: bun install
-      - run: bun build --preset github_pages
+      - run: bun build
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
