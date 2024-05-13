@@ -1,4 +1,3 @@
-# https://github.com/actions/deploy-pages#usage
 name: zhi-blog
 on:
   # workflow_dispatch:
@@ -15,11 +14,12 @@ jobs:
           bun-version: latest
       # Pick your own package manager and build script
       - run: bun install
-      - run: bun run generate
+      - run: bun run build
+      # - run: bun run generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./.output/public
   # Deployment job
   deploy:
     # Add a dependency to the build job

@@ -78,8 +78,8 @@ onMounted(() => {
       data-aos-delay="100"
     >
       <a
-        href="/front-end.pdf"
-        download="front-end.pdf"
+        href="/zhi-blog/front-end.pdf"
+        download="张文皓月.pdf"
         class="group text-sm px-4 py-2 bg-white sm:text-lg sm:px-7 sm:py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
       >
         下载简历

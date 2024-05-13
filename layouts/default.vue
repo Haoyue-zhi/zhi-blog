@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const useActiveSection = useState("activeSection", () => "首页");
+useState("activeSection", () => "首页");
 </script>
 
 <template>
