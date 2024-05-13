@@ -6,9 +6,9 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-aos",
   ],
-  // app: {
-  //   baseURL: "/zhi-blog/",
-  // },
+  app: {
+    baseURL: "/zhi-blog/",
+  },
   devtools: { enabled: false },
   devServer: {
     port: 3333,
