@@ -7,10 +7,10 @@ export const links = [
     name: "关于我",
     hash: "#about",
   },
-  {
-    name: "我的项目",
-    hash: "#projects",
-  },
+  // {
+  //   name: "我的项目",
+  //   hash: "#projects",
+  // },
   {
     name: "我的技能",
     hash: "#skills",
@@ -21,42 +21,35 @@ export const links = [
   },
 ] as const;
 
-export const headerLanguageMap = {
-  Home: "首页",
-  About: "关于我",
-  Projects: "我的项目",
-  Skills: "我的技能",
-  Experience: "我的经历",
-};
 
 export const experiencesDataZn = [
   {
-    title: "计算机与信息技术硕士",
-    location: "英国圣安德鲁斯大学(qs前100 英国前3)",
+    title: "前端开发",
+    location: "⼭东芯⾠⼈⼯智能科技有限公司",
     description:
-      "获得了计算机与信息技术硕士学位，在人机交互、计算机通信系统和信息安全等领域深入学习。培养了计算思维、以用户为中心的设计和数据可视化方面的强大能力，为在科技驱动的环境中有效应用做好了准备。",
-    date: "2023年9月 - 2024年8月",
-  },
-  {
-    title: "前端实习生",
-    location: "蔚来汽车（中国武汉）",
-    description:
-      "使用Vue3、TypeScript和百度地图API开发蔚来第三代换电站列表和详情页。在任务向导页面实施基于角色的访问控制，增强系统安全性。在Jira管理的环境中有效协作，利用Jenkins进行部署流程。",
+      "使用Vue3、TypeScript和Wujie微前端开发边缘侧控制端平台。从0搭建项⽬框架，负责技术选型，难点攻克，微前端实现。",
     date: "2022年8月 - 2022年12月",
   },
   {
-    title: "前端开发",
-    location: "武汉大学大数据研究院",
+    title: "前端实习生",
+    location: "⻄安绿点信息科技有限公司",
     description:
-      "使用umi（React框架）和Ant Design Pro开发和维护Finknow，一个金融知识图谱查询和分析平台。利用基于G6的React图分析工具包graphin开发了股权网络穿透图，增强了数据可视化功能。",
-    date: "2022年5月 - 2022年7月",
+      "使用jQuery和Vue 2开发和维护中国移动手机营业厅 APP。根据国家⼯信部“互联⽹应⽤适⽼化及⽆障碍改造专项⾏动”对 APP 进⾏了⽆障碍改造。",
+    date: "2021年8月 - 2023年1月",
   },
   {
-    title: "数字出版学士",
-    location: "武汉大学",
+    title: "前端开发",
+    location: "青岛工学院实验室",
     description:
-      "以3.81/4.0的GPA毕业，获得数字出版学士学位，掌握了数字媒体和出版技术的基础知识。",
-    date: "2019年9月 - 2023年6月",
+      "使用Vue2和Element UI开发就业创业资⾦⻛险防控预警系统。主导项⽬从概念到实现的全过程，进⾏⽅案可⾏性研究，攻克技术难点。",
+    date: "2021年1月 - 2021年11月",
+  },
+  {
+    title: "工学学士",
+    location: "青岛工学院",
+    description:
+      "获得山东省软件设计大赛三等奖。获得软件工程学位，掌握了前端开发技术的基础知识。",
+    date: "2018年9月 - 2022年6月",
   },
 ];
 

@@ -10,6 +10,7 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
+    "@vueuse/motion": "^2.1.0",
     "nuxt": "^3.11.2",
     "typed.js": "^2.1.0",
     "vue": "^3.4.27",

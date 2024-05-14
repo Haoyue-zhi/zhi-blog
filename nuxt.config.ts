@@ -5,6 +5,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "nuxt-icon",
     "nuxt-aos",
+    "@vueuse/motion/nuxt",
   ],
   app: {
     baseURL: "/zhi-blog/",

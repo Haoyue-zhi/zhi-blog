@@ -47,7 +47,7 @@ onMounted(() => {
     </div>
 
     <h1
-      class="mb-10 mt-4 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
+      class="mb-10 mt-4 px-4 text-2xl font-medium leading-[1.5] sm:text-4xl"
       data-aos="fade-up"
     >
       <span class="text-sm tracking-wider"> 你好，我是 </span>
