@@ -6,12 +6,13 @@ useSectionInView(experienceRef, "我的经历");
 </script>
 
 <template>
-  <section
-    ref="experienceRef"
-    class="sm:mb-40 relative mb-20 scroll-mt-20"
-    id="experience"
-  >
-    <h2 class="text-3xl font-medium capitalize mb-8 text-center">我的经历</h2>
+  <section class="sm:mb-40 relative mb-20 scroll-mt-20" id="experience">
+    <h2
+      ref="experienceRef"
+      class="text-3xl font-medium capitalize mb-8 text-center"
+    >
+      我的经历
+    </h2>
     <ul
       class="timeline timeline-snap-icon max-md:timeline-compact timeline-vertical px-10"
     >
