@@ -1,6 +1,5 @@
 <script setup lang="ts">
 useHead({
-  title: "凪. Blog",
   htmlAttrs: {
     class: "scroll-smooth",
   },

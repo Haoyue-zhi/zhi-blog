@@ -8,7 +8,11 @@ export default defineNuxtConfig({
     "@vueuse/motion/nuxt",
   ],
   app: {
-    baseURL: "/zhi-blog/",
+    baseURL: "/zhi-blog",
+    head: {
+      title: "凪. Blog",
+      link: [{ rel: "icon", type: "image/x-icon", href: "favicon.ico" }],
+    },
   },
   devtools: { enabled: false },
   devServer: {

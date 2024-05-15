@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { name, typedDes } from "~/assets/data";
 import Typed from "typed.js";
 
 const introRef = ref();
@@ -6,7 +7,7 @@ useSectionInView(introRef, "首页");
 
 const initTyped = () => {
   new Typed("#introduce", {
-    strings: ["Frontend Developer", "Full Stack Developer"],
+    strings: typedDes,
     typeSpeed: 50,
     backSpeed: 50,
     loop: true,
@@ -57,7 +58,7 @@ onMounted(() => {
         data-aos-delay="100"
       >
         <h1 class="text-center text-4xl font-bold tracking-tight sm:text-5xl">
-          张文皓月
+          {{ name }}
         </h1>
 
         <div class="text-center">
