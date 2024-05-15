@@ -99,7 +99,7 @@ export const experiencesDataZn = [
     location: "⼭东芯⾠⼈⼯智能科技有限公司",
     description:
       "使用Vue3、TypeScript和Wujie微前端开发边缘侧控制端平台。从0搭建项⽬框架，负责技术选型，难点攻克，微前端实现。",
-    date: "2022年8月 - 2022年12月",
+    date: "2023年4月 - 2023年12月",
   },
   {
     title: "前端实习生",
