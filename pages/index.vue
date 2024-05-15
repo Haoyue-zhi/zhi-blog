@@ -1,9 +1,9 @@
 <template>
-  <main class="flex flex-col items-center px-4 overflow-x-hidden">
+  <main class="flex flex-col items-center px-4">
     <AppIntro />
     <AppSectionDivider />
     <AppAbout />
-    <!-- <AppProject /> -->
+    <AppProject />
     <AppSkills />
     <AppExperience />
   </main>

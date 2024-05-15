@@ -7,10 +7,10 @@ export const links = [
     name: "关于我",
     hash: "#about",
   },
-  // {
-  //   name: "我的项目",
-  //   hash: "#projects",
-  // },
+  {
+    name: "我的项目",
+    hash: "#projects",
+  },
   {
     name: "我的技能",
     hash: "#skills",
@@ -31,47 +31,36 @@ Vue3、Vite 和 Nuxt.js 等技术，对 JavaScript, TypeScript 和 HTML/CSS
 🛠️。如果不在电脑前，我喜欢做饭、看电影
 🍳🎥💪，规律的睡眠和饮食是我精力充沛的秘诀 🌟。`;
 
-// export type ProjectTags = typeof projectsData[number]["tags"];
-
-// export const projectsData = [
-//     {
-//         title: "Typing Speed",
-//         title_zh: '打字测验⌨️',
-//         description:
-//             "A comprehensive typing speed test application that tracks your overall typing performance. It provides detailed statistics, including total words typed, errors made, and accuracy rate, allowing users to monitor their progress and improve their typing efficiency.",
-//         desc_zh: "一个打字速度测试应用。敲击即开始打字，计时结束后将显示总敲击单词数、正确率、错误率等。该应用UI简洁现代，支持Dark Mode切换。",
-//         tags: ["React", "TypeScript", "Tailwind", 'Framer Motion'],
-//         imageUrl: typingSpeedImage,
-//         projectUrl: 'https://github.com/Codefreyy/typing-speed-game',
-//         demoUrl: 'https://joy-typing-speed-game.vercel.app/',
-//         detailRoute: '/projects/typing-speed',
-//     },
-//     {
-//         title: "Game Hub",
-//         title_zh: '游戏枢纽站🎮',
-//         description: "A responsive game grid application that offers search and filter functionality, and features infinite scrolling using React Query. It also includes robust form validation with Zod and efficient state management with Zustand.",
-//         desc_zh: "响应式游戏网格，支持搜索和过滤，使用react query实现无限滚动，使用Zod进行表单验证，Zustand进行状态管理。",
-//         tags: ["React", "TypeScript", "Zod", "React Query", "Chakra UI"],
-//         imageUrl: gameHubImage,
-//         projectUrl: 'https://github.com/Codefreyy/New-Game-hub',
-//         demoUrl: 'https://new-game-hub.vercel.app/',
-//         detailRoute: '/projects/typing-speed'
-
-//     },
-//     {
-//         title: "2048 Game",
-//         title_zh: "2048",
-//         description:
-//             "Cloned the classic 2048 game using object-oriented programming and vanilla JavaScript.",
-//         desc_zh: "使用面向对象编程思维和原生JavaScript实现了经典的2048游戏。",
-//         tags: ["JavaScript", "HTML", "CSS3"],
-//         imageUrl: rubicGameImage,
-//         projectUrl: 'https://github.com/Codefreyy/VanillaJS-Game-2048',
-//         demoUrl: 'https://vanilla-js-game-2048.vercel.app/',
-//         detailRoute: '/projects/typing-speed'
-
-//     },
-// ]
+export const projectsData = [
+  {
+    title: "Anki 记忆卡",
+    description:
+      "通过记忆算法和个性化复习系统，可以根据每个人对不同知识点的难易程度，难的知识点多学习，简单的知识点少学习。",
+    tags: ["Vue 3", "TypeScript", "Tailwind CSS", "Naive UI", "Pinia"],
+    imageUrl: "/anki.png",
+    projectUrl: "",
+    demoUrl: "",
+    detailRoute: "",
+  },
+  {
+    title: "后台管理系统",
+    description: "一个后台管理系统。该应用UI简洁现代，支持Dark Mode切换。",
+    tags: ["Vue 3", "TypeScript", "Tailwind CSS", "Element Plus", "Pinia"],
+    imageUrl: "/admin.jpeg",
+    projectUrl: "",
+    demoUrl: "",
+    detailRoute: "",
+  },
+  {
+    title: "下厨房",
+    description: "使用Vue和Native Js实现了下厨房APP。",
+    tags: ["Vue 2", "JavaScript", "HTML", "SASS"],
+    imageUrl: "/xiachufang.jpg",
+    projectUrl: "https://github.com/Haoyue-zhi/Xiachufang",
+    demoUrl: "",
+    detailRoute: "",
+  },
+];
 
 export const skillsData = [
   "HTML",
