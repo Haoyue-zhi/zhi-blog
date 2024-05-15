@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { links } from "~/assets/data";
 
-const useActiveSection = useState("activeSection");
+const activeSection = useActiveSection();
+const timeOfLastClick = useTimeOfLastClick();
 </script>
 
 <template>
@@ -23,14 +24,19 @@ const useActiveSection = useState("activeSection");
             :to="link.hash"
             class="flex w-full items-center justify-center px-3 py-3 no-wrap hover:text-gray-950 dark:hover:text-gray-300 transition"
             :class="{
-              'text-gray-950': useActiveSection === link.name,
-              'dark:hover:text-gray-600': useActiveSection === link.name,
+              'text-gray-950': activeSection === link.name,
+              'dark:hover:text-gray-600': activeSection === link.name,
             }"
-            @click="useActiveSection = link.name"
+            @click="
+              () => {
+                activeSection = link.name;
+                timeOfLastClick = Date.now();
+              }
+            "
           >
             {{ link.name }}
             <span
-              v-if="useActiveSection === link.name"
+              v-if="activeSection === link.name"
               class="bg-gray-50 rounded-full absolute inset-0 -z-10"
               layoutId="activeSection"
             ></span>

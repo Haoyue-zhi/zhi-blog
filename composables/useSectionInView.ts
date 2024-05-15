@@ -4,14 +4,15 @@ export const useSectionInView = (el: Ref<HTMLElement>, name: string) => {
   const target = el;
   const targetIsVisible = ref(false);
 
-  const useActiveSection = useState("activeSection");
+  const activeSection = useActiveSection();
+  const timeOfLastClick = useTimeOfLastClick();
 
   useIntersectionObserver(
     target,
     ([{ isIntersecting }]) => {
       targetIsVisible.value = isIntersecting;
-      if (isIntersecting) {
-        useActiveSection.value = name;
+      if (isIntersecting && Date.now() - timeOfLastClick.value > 1000) {
+        activeSection.value = name;
       }
     },
     {

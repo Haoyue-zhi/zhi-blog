@@ -1,7 +1,3 @@
-<script setup lang="ts">
-useState("activeSection", () => "首页");
-</script>
-
 <template>
   <div class="relative">
     <div
