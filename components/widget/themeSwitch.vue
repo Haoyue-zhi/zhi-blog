@@ -1,4 +1,11 @@
 <script setup lang="ts">
+// @ts-ignore
+import { useSound } from "@vueuse/sound";
+import lightOn from "public/sounds/light-on.mp3";
+import lightOff from "public/sounds/light-off.mp3";
+const { play: playLight } = useSound(lightOn, { volume: 0.5 });
+const { play: playDark } = useSound(lightOff, { volume: 0.5 });
+
 const isDark = useDark({
   attribute: "data-theme",
 });
@@ -23,9 +30,9 @@ const switchTheme = (event: MouseEvent) => {
   // @ts-expect-error: Transition API
   const transition = document.startViewTransition(() => {
     toggleDark();
-    console.log(darkMode.value, isDark.value);
   });
   transition.ready.then(() => {
+    isDark.value ? playDark() : playLight();
     const clipPath = [
       `circle(0px at ${x}px ${y}px)`,
       `circle(${endRadius}px at ${x}px ${y}px)`,
