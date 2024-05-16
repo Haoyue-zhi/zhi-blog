@@ -2,7 +2,7 @@
 import { experiencesDataZn } from "~/assets/data";
 
 const experienceRef = ref();
-useSectionInView(experienceRef, "我的经历");
+useSectionInView(experienceRef, "我的经历", 0.1);
 </script>
 
 <template>

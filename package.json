@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@vueuse/motion": "^2.1.0",
+    "@vueuse/sound": "^2.0.1",
     "nuxt": "^3.11.2",
     "typed.js": "^2.1.0",
     "vue": "^3.4.27",

@@ -1,6 +1,10 @@
 import type { Ref } from "vue";
 
-export const useSectionInView = (el: Ref<HTMLElement>, name: string) => {
+export const useSectionInView = (
+  el: Ref<HTMLElement>,
+  name: string,
+  threshold: number = 0.75
+) => {
   const target = el;
   const targetIsVisible = ref(false);
 
@@ -16,7 +20,7 @@ export const useSectionInView = (el: Ref<HTMLElement>, name: string) => {
       }
     },
     {
-      threshold: 0.5,
+      threshold,
     }
   );
 

@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "nuxt-icon",
     "nuxt-aos",
     "@vueuse/motion/nuxt",
+    "@vueuse/sound/nuxt",
   ],
   app: {
     baseURL: "/zhi-blog",
@@ -17,5 +18,10 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   devServer: {
     port: 3333,
+  },
+  vite: {
+    optimizeDeps: {
+      include: ["howler"],
+    },
   },
 });

@@ -7,5 +7,8 @@
     <AppHeader />
     <slot />
     <AppFooter />
+    <AppWidgetWrapper>
+      <WidgetThemeSwitch />
+    </AppWidgetWrapper>
   </div>
 </template>

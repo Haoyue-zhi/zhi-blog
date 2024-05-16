@@ -1,9 +1,12 @@
 <script setup lang="ts">
+// @ts-ignore
+import { useSound } from "@vueuse/sound";
 import { name, typedDes } from "~/assets/data";
 import Typed from "typed.js";
+import bubble from "public/sounds/bubble.wav";
 
 const introRef = ref();
-useSectionInView(introRef, "首页");
+useSectionInView(introRef, "首页", 0.2);
 
 const initTyped = () => {
   new Typed("#introduce", {
@@ -17,6 +20,8 @@ const initTyped = () => {
 onMounted(() => {
   initTyped();
 });
+
+const { play, stop } = useSound(bubble);
 </script>
 
 <template>
@@ -38,9 +43,10 @@ onMounted(() => {
           />
         </div>
         <span
-          class="absolute text-4xl bottom-0 right-0 hover:rotate-2"
+          class="absolute text-4xl bottom-0 right-0 hover:rotate-2 cursor-pointer"
           data-aos="zoom-in"
           data-aos-delay="200"
+          @mouseover="play"
         >
           👋
         </span>
