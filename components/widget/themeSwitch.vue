@@ -11,6 +11,7 @@ const switchTheme = (event: MouseEvent) => {
     document.startViewTransition &&
     !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (!isAppearanceTransition || !event) {
+    toggleDark();
     return;
   }
   const x = event.clientX;
