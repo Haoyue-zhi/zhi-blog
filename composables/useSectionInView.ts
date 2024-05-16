@@ -16,7 +16,7 @@ export const useSectionInView = (el: Ref<HTMLElement>, name: string) => {
       }
     },
     {
-      threshold: 0.75,
+      threshold: 0.5,
     }
   );
 
