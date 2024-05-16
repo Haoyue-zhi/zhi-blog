@@ -80,7 +80,9 @@ const { title, description, tags, imageUrl, projectUrl, demoUrl, detailRoute } =
       />
     </section>
 
-    <div class="card w-96 shadow-xl sm:hidden dark:text-white dark:bg-white/10">
+    <section
+      class="card shadow-xl sm:hidden dark:text-white dark:bg-white/10 max-w-[45rem]"
+    >
       <figure class="bg-base-100">
         <NuxtImg
           :src="imageUrl"
@@ -123,7 +125,7 @@ const { title, description, tags, imageUrl, projectUrl, demoUrl, detailRoute } =
           </NuxtLink>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 
