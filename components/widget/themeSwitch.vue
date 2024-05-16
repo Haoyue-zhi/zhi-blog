@@ -46,8 +46,9 @@ const switchTheme = (event: MouseEvent) => {
 </script>
 
 <template>
-  <label class="swap swap-rotate w-[1.5rem] h-[1.5rem]">
-    <!-- this hidden checkbox controls the state -->
+  <label
+    class="swap swap-rotate w-[2.5rem] h-[2.5rem] bg-opacity-80 hover:scale-[1.15] active:scale-105 transition-all"
+  >
     <input
       type="checkbox"
       class="theme-controller"
@@ -57,7 +58,7 @@ const switchTheme = (event: MouseEvent) => {
 
     <!-- sun icon -->
     <svg
-      class="swap-off fill-current w-full h-full"
+      class="swap-off fill-current w-4 h-4"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
@@ -68,7 +69,7 @@ const switchTheme = (event: MouseEvent) => {
 
     <!-- moon icon -->
     <svg
-      class="swap-on fill-current w-full h-full"
+      class="swap-on fill-current w-4 h-4"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
     >
