@@ -85,14 +85,6 @@ const { play, stop } = useSound(bubble);
       data-aos-delay="100"
     >
       <a
-        href="front-end.pdf"
-        download="张文皓月.pdf"
-        class="group text-sm px-4 py-2 bg-white sm:text-lg sm:px-7 sm:py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10"
-      >
-        下载简历
-        <Icon name="mdi:download" />
-      </a>
-      <a
         class="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
         href="https://github.com/Haoyue-zhi"
         target="_blank"
